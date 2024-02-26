@@ -8,12 +8,16 @@ import { DataService } from './data.service';
 })
 export class AppComponent implements OnInit{
   message: string = "";
- liste;
+  liste;
   
-  constructor(private dataService:DataService) { }
+  constructor(private dataService:DataService){ }
   
-  ngOnInit() {
+  ngOnInit(){
     this.liste = this.dataService.listeArticles;
+  }
+
+  onAffiche(arg:string) {
+    return this.message="Merci d'avooir votre l'article : " + arg;
   }
  
 }

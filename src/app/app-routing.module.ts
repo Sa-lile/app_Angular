@@ -6,9 +6,9 @@ import { AjouterComponent } from './ajouter/ajouter.component';
 
 
 const routes: Routes = [
-  { path:"", component: ListeComponent},
-  { path: 'details/:id', component: DetailsComponent},
-  { path: 'ajouter', component: AjouterComponent}
+  {path:"", component: ListeComponent},
+  {path:"details/:id", component: DetailsComponent},
+  {path:"ajouter", component: AjouterComponent}
 
 ];
 

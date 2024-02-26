@@ -7,10 +7,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ArticleComponent implements OnInit {
 
-  // titreArticle: string ="Titre de l'article";
-  // prixArticle: number = 12;
-  // textAltImg: string ="Titre alternative de l'image";
-  // urlImg: string ="https://via.placeholder.com/400x250";
   totalNbrLike: number = 0;
   comment: string = "Ceci est un commentaire";
   @Output() info = new EventEmitter<string>();
@@ -21,12 +17,11 @@ export class ArticleComponent implements OnInit {
   @Input() urlImg: string;
   @Input() textAltImg: string;
   @Input() dispo: boolean;
-  @Input() idArticle: number;
+  @Input() idArticle: string;
   jaime: boolean = true;
+ 
 
-  
-
-  constructor() { }
+  constructor(){ }
 
   ngOnInit(): void {
   }
